@@ -6,7 +6,7 @@ sap.ui.define([
 
     var Controller = Controller.extend("DemoUXapp.controller.MainNavigation.Pane1", {
         onInit: function () {
-            var oModel = new JSONModel(sap.ui.require.toUrl("DemoUXapp/content") + "/Tree.json");
+            var oModel = new JSONModel(sap.ui.require.toUrl("DemoUXapp/localService/mockdata") + "/Tree.json");
             this.getView().setModel(oModel);
             //this.byId("Tree").expandToLevel(1);
         }
