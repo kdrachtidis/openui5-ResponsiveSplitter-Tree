@@ -2,7 +2,24 @@
     height="100%"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page title="Left pane container">
-
-    </Page>
+    <Tree id="Tree"
+        items="{path: '/'}"
+        mode="MultiSelect">
+        <headerToolbar>
+            <OverflowToolbar>
+                <content>
+                    <Title text="Repository" />
+                    <ToolbarSpacer />
+                </content>
+            </OverflowToolbar>
+        </headerToolbar>
+        <infoToolbar>
+            <OverflowToolbar>
+                <content>
+                    <Title text="Tree's info toolbar" />
+                </content>
+            </OverflowToolbar>
+        </infoToolbar>
+        <StandardTreeItem title="{text}" />
+    </Tree>
 </mvc:View>
